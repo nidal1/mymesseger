@@ -1,0 +1,14 @@
+
+
+.list-group-item:not(:first-child ) p{
+    margin: 0;
+}
+
+.list-group-item:not(:first-child ):hover,
+.list-group-item:not(:first-child ).activeContact{
+    background-color: rgb(245, 245, 245);
+}
+.list-group-item:first-child ,
+.list-group-item:last-child {
+    border-radius: 0;
+}

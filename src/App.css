@@ -1,38 +1,87 @@
-.App {
-  text-align: center;
+*{
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.hidden{
+    display: none !important;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#container-fluid{
+    padding: 0;
+    display: flex;
+    height: 100vh;
+    max-height: 100vh;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.column{
+    padding: 0;
+    display: inline-block;
+    height: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+.column:first-child{
+    width: 25%;
+    overflow-y: scroll;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.column:last-child{
+    width: 75%;
 }
+
+.conversationErea {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    max-height: 100%;
+    box-sizing: border-box;
+}
+.conversationErea .conversationInfos{
+    padding: .75rem 1.25rem;
+    color: #fff;
+    background-color: #007bff;
+    border: 1px solid #007bff;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.conversationErea .conversationInfos p{
+    margin: 0;
+}
+
+.conversationErea .messagingErea{
+    display: block;
+    height: calc(100% - (50px+61px));
+    overflow: hidden !important;
+}
+
+.conversationErea .messagingErea .overScoll{
+    overflow-y: scroll;
+    width: 100%;
+    height: 100%;
+    padding: 0 1.25rem;
+}
+
+#style-4::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+#style-4::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #F5F5F5;
+}
+
+#style-4::-webkit-scrollbar-thumb
+{
+	background-color: #000000;
+	border: 2px solid #555555;
+}
+
+
+
+

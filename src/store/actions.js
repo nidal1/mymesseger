@@ -1,0 +1,3 @@
+export const CREATE_CONTACTS = "CREATE_CONTACTS";
+export const SET_ACTIVE_ITEAM = "SET_ACTIVE_ITEAM";
+export const SET_MSG = "SET_MSG";
